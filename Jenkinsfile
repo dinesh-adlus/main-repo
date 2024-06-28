@@ -1,6 +1,13 @@
 pipeline {
     agent any
     stages {
+        stage("checkout"){
+            steps{
+                script{
+                     git url: "https://github.com/dinesh-adlus/main-repo.git"
+                }
+            }
+        }
        stage("Generating OIDC token and saving it to a file") {
             steps {
                 script {
