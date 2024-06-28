@@ -1,4 +1,4 @@
-pipeline {
+pipelines {
     agent any
     stages {
        stage("Generating OIDC token and saving it to a file") {
