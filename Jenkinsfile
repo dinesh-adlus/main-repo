@@ -4,7 +4,7 @@ pipeline {
        stage("Generating OIDC token and saving it to a file") {
             steps {
                 script {
-                        sh (script: 'gcloud auth print-identity-token main-service-account@splendid-sonar-427819-i0.iam.gserviceaccount.com  --audiences="//iam.googleapis.com/projects/92076150966/locations/global/workloadIdentityPools/jenkins-pool/subject/SUBJECT_ATTRIBUTE_VALUE"  > C:\Users\dini\Downloads',returnStdout: true)
+                        sh (script: 'gcloud auth print-identity-token main-service-account@splendid-sonar-427819-i0.iam.gserviceaccount.com  --audiences="//iam.googleapis.com/projects/92076150966/locations/global/workloadIdentityPools/jenkins-pool/subject/SUBJECT_ATTRIBUTE_VALUE"  > C:/Users/dini/Downloads',returnStdout: true)
                 }                                                                                                                                                                                                                                                                                                                                                                                            
             }
         }
